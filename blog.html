@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get to Know Us</title>
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+            body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+              background-color: #f9f9f9;
+            }
+        
+            .container {
+              max-width: 1200px;
+              margin: 20px auto;
+              padding: 20px;
+              background: white;
+              border-radius: 10px;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+        
+            h1, h2 {
+              text-align: center;
+              margin-bottom: 20px;
+              color: #088178;
+              text-transform: uppercase;
+            }
+        
+            .section {
+              margin-bottom: 40px;
+            }
+        
+            .section img {
+                height: 150px;
+              width: 150px;
+              border-radius: 10px;
+              margin-bottom: 10px;
+            }
+        
+            .reviews, .products, .deals, .tips, .gifts, .sustainability {
+              padding: 20px;
+              border: 1px solid #ccc;
+              border-radius: 10px;
+              background: #fff;
+              transition: box-shadow 0.3s ease;
+            }
+        
+            .reviews:hover, .products:hover, .deals:hover, .tips:hover, .gifts:hover, .sustainability:hover {
+              box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            }
+        
+            .review, .product, .deal, .tip, .gift, .impact {
+              margin-bottom: 20px;
+              padding: 10px;
+              border-bottom: 1px solid #ddd;
+            }
+        
+            .review:last-child, .product:last-child, .deal:last-child, .tip:last-child, .gift:last-child, .impact:last-child {
+              border-bottom: none;
+            }
+        
+            .star {
+              color: gold;
+            }
+        
+            .deal span {
+              color: red;
+              font-weight: bold;
+            }
+        
+            .highlight-icon {
+              font-size: 24px;
+              color: #088178;
+              margin-right: 10px;
+            }
+         
+      </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#">
+            <img src="img/logo.png" class="logo" alt="">
+        </a>
+    
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag">
+                    <a href="cart.html">
+                        <i class="far fa-shopping-bag"></i>
+                        <span id="cart-count">0</span> <!-- Added cart count badge -->
+                    </a>
+                </li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html">
+                <i class="far fa-shopping-bag"></i>
+                <span id="mobile-cart-count">0</span> <!-- Cart count for mobile -->
+            </a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
+
+    <div class="container">
+        <!-- Customer Testimonials -->
+        <div class="section reviews">
+          <h2><i class="fas fa-comments highlight-icon"></i>Customer Testimonials</h2>
+          <div class="review">
+            <p><strong>John D.</strong></p>
+            <p>"Absolutely love the quality of these products! Highly recommend."</p>
+            <p><span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
+          </div>
+          <div class="review">
+            <p><strong>Emily R.</strong></p>
+            <p>"Fast delivery and amazing customer service. Will shop again!"</p>
+            <p><span class="star">&#9733;&#9733;&#9733;&#9733;&#9734;</span></p>
+          </div>
+        </div>
+      
+        <!-- Product Showcase -->
+        <div class="section products">
+          <h2><i class="fas fa-tshirt highlight-icon"></i>Product Showcase</h2>
+          <div class="product">
+            <img src="img/products/f1.jpg" alt="Product 1">
+            <p><strong>Cartoon Astronaut T-Shirt</strong> - $89.99</p>
+          </div>
+          <div class="product">
+            <img src="img/products/f2.jpg" alt="Product 2">
+            <p><strong>Groove Men Shirt</strong> - $82.99</p>
+          </div>
+        </div>
+      
+        <!-- Deals & Offers -->
+        <div class="section deals">
+          <h2><i class="fas fa-tags highlight-icon"></i>Deals & Offers</h2>
+          <div class="deal">
+            <p>Buy 1 Get 1 Free on all T-Shirts!</p>
+            <p><strong>Hurry! Offer ends in:</strong> <span id="countdown">3d 5h 30m</span></p>
+          </div>
+          <div class="deal">
+            <p>20% off on all winter wear.</p>
+          </div>
+        </div>
+      
+        <!-- Care & Maintenance Tips -->
+        <div class="section tips">
+          <h2><i class="fas fa-tools highlight-icon"></i>Care & Maintenance Tips</h2>
+          <div class="tip">
+            <p><strong>Tip 1:</strong> How to clean leather shoes effectively.</p>
+          </div>
+          <div class="tip">
+            <p><strong>Tip 2:</strong> Washing instructions for cotton fabrics.</p>
+          </div>
+        </div>
+      
+        <!-- Gift Ideas -->
+        <div class="section gifts">
+          <h2><i class="fas fa-gift highlight-icon"></i>Gift Ideas</h2>
+          <div class="gift">
+            <p><strong>For Her:</strong> Elegant Jewelry Sets.</p>
+          </div>
+          <div class="gift">
+            <p><strong>For Him:</strong> Stylish Wallets and Belts.</p>
+          </div>
+        </div>
+      
+        <!-- Sustainability & Impact -->
+        <div class="section sustainability">
+          <h2><i class="fas fa-leaf highlight-icon"></i>Sustainability & Impact</h2>
+          <div class="impact">
+            <p>"We are committed to eco-friendly practices by sourcing sustainable materials for all our products."</p>
+          </div>
+          <div class="impact">
+            <p>"10% of all sales are donated to local charities supporting education."</p>
+          </div>
+        </div>
+      </div>
+      
+
+      <footer class="section-p1 section-m1">
+        <div class="col">
+          <img class="logo" src="img/logo.png" alt="">
+          <h4>Contact</h4>
+          <p><strong>Address: </strong>Cara, Popular Corner, Bangalore</p>
+          <p><strong>Phone: </strong>+01 2222 365 /(+91) 01 2345 6789</p>
+          <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</p>
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest-p"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col">
+          <h4>About</h4>
+          <a href="#">About us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          
+        </div>
+          <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+          </div>
+          <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024 Cara - All Rights Reserved</p>
+        </div>
+        
+          </footer>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

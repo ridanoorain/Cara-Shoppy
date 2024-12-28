@@ -1,19 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cara</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section id="header">
+        <a href="#">
+            <img src="img/logo.png" class="logo" alt="">
+        </a>
+    
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag">
+                    <a href="cart.html">
+                        <i class="far fa-shopping-bag"></i>
+                        <span id="cart-count">0</span> <!-- Added cart count badge -->
+                    </a>
+                </li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html">
+                <i class="far fa-shopping-bag"></i>
+                <span id="mobile-cart-count">0</span> <!-- Cart count for mobile -->
+            </a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <!-- Include Navbar -->
+    <div id="navbar-container"></div>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tech2etc Ecommerce Tutorial</title>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <main id="about-us-page">
+        <!-- Hero Section -->
+        <section id="about-hero">
+            <h1>Discover Cara</h1>
+            <p>Your journey to elegance and style begins here.</p>
+        </section>
 
-        <link rel="stylesheet" href="style.css">
-    </head>
+        <!-- Mission Section -->
+        <section id="our-mission">
+            <div class="content-container">
+                <h2>Our Mission</h2>
+                <p>We’re on a mission to create fashion that blends sophistication, comfort, and sustainability. At Cara, every piece is designed to inspire confidence and reflect individuality.</p>
+            </div>
+        </section>
 
-    <body>
+        <!-- Values Section -->
+        <section id="our-values">
+            <h2 id="core-value">Our Core Values</h2>
+            <div class="value-cards">
+                <div class="value-card">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Quality</h3>
+                    <p>Every product is crafted with precision and premium materials to ensure durability and style.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Sustainability</h3>
+                    <p>Eco-friendly practices and responsible sourcing are at the heart of what we do.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation</h3>
+                    <p>We constantly innovate to bring you timeless classics and fresh trends.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Passion</h3>
+                    <p>Our love for fashion drives us to create pieces that empower and inspire.</p>
+                </div>
+            </div>
+        </section>
 
-        <script src="script.js"></script>
-    </body>
+        <!-- Team Section -->
+        <section id="team">
+            <h2 id="meet">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="img/rida main.png" alt="Team Member 1">
+                    <h3>Rida Noorain</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/ishowspeed.jpg" alt="Team Member 2">
+                    <h3>Jordan Smith</h3>
+                    <p>Creative Director</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/random guy (1).jpg" alt="Team Member 3">
+                    <h3>Taylor Brown</h3>
+                    <p>Head of Sustainability</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <footer class="section-p1 section-m1">
+        <div class="col">
+          <img class="logo" src="img/logo.png" alt="">
+          <h4>Contact</h4>
+          <p><strong>Address: </strong>Cara, Popular Corner, Bangalore</p>
+          <p><strong>Phone: </strong>+01 2222 365 /(+91) 01 2345 6789</p>
+          <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</p>
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest-p"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col">
+          <h4>About</h4>
+          <a href="#">About us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          
+        </div>
+          <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+          </div>
+          <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024 Cara - All Rights Reserved</p>
+        </div>
+        
+          </footer>
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #222;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        #about-hero {
+            background: url('hero-bg.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem 3rem 1rem;
+            margin-bottom: 2rem;
+        }
+
+        #about-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        #about-hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Mission Section */
+        #our-mission {
+            background-color:  #cce7d0 ;
+            padding: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* Values Section */
+        #our-values {
+            padding: 3rem 2rem 5rem 2rem ;
+            background-color: #f8f8f8;
+            text-align: center;
+           
+        }
+        #core-value{
+            padding-bottom: 60px;
+        }
+
+        .value-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .value-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .value-card:hover {
+            transform: scale(1.05);
+        }
+
+        .value-card i {
+            font-size: 2rem;
+            color: #088178;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Team Section */
+        #team {
+            padding: 3rem;
+            text-align: center;
+        }
+        #meet{
+            padding-bottom: 2rem;
+        }
+
+        .team-grid {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            text-align: center;
+            width: 200px;
+        }
+   
+        .team-member img {
+            width: 50%;
+            height: 50%;
+            border-radius: 70%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member h3 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+    </style>
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
 </html>

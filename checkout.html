@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #088178;
+    }
+
+    .cart-summary, .user-details {
+      margin-bottom: 20px;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .cart-item:last-child {
+      border-bottom: none;
+    }
+
+    .cart-item img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .cart-item-details {
+      flex: 2;
+      margin-left: 10px;
+    }
+
+    .cart-total {
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    form input, form button, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: #088178;
+      color: white;
+      cursor: pointer;
+      border: none;
+      font-size: 16px;
+    }
+
+    form button:hover {
+      background: #066e66;
+    }
+  </style>
+</head>
+<body>
+
+    <section id="header">
+        <a href="#">
+            <img src="img/logo.png" class="logo" alt="">
+        </a>
+    
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag">
+                    <a class="active" href="cart.html">
+                        <i class="far fa-shopping-bag"></i>
+                        <span id="cart-count">0</span> <!-- Added cart count badge -->
+                    </a>
+                </li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html">
+                <i class="far fa-shopping-bag"></i>
+                <span id="mobile-cart-count">0</span> <!-- Cart count for mobile -->
+            </a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+  <div class="container">
+    <h1>Checkout</h1>
+    
+    <!-- Cart Summary -->
+    <div class="cart-summary" id="cart-summary">
+      <h2>Your Order</h2>
+      <div id="cart-items"></div>
+      <p class="cart-total">Total: $<span id="total-price">0.00</span></p>
+    </div>
+
+    <!-- User Details Form -->
+    <div class="user-details">
+      <h2>Enter Your Details</h2>
+      <form id="checkout-form">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
+        <textarea id="address" placeholder="Delivery Address" rows="3" required></textarea>
+        <button type="submit">Confirm Order</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="section-p1 section-m1">
+    <div class="col">
+      <img class="logo" src="img/logo.png" alt="">
+      <h4>Contact</h4>
+      <p><strong>Address: </strong>Cara, Popular Corner, Bangalore</p>
+      <p><strong>Phone: </strong>+01 2222 365 /(+91) 01 2345 6789</p>
+      <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</p>
+      <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+      
+    </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="img/pay/app.jpg" alt="">
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="img/pay/pay.png" alt="">
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Cara - All Rights Reserved</p>
+    </div>
+    
+      </footer>
+
+  <script>
+    // Load the cart from localStorage
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartItemsContainer = document.getElementById('cart-items');
+    const totalPriceElement = document.getElementById('total-price');
+
+    // Render the cart items
+    function renderCart() {
+      cartItemsContainer.innerHTML = '';
+      let totalPrice = 0;
+
+      cart.forEach(item => {
+        if (!item.quantity || item.quantity < 1) {
+          item.quantity = 1; // Ensure quantity is at least 1
+        }
+        const price = parseFloat(item.price); // Ensure price is parsed as a number
+
+        const itemElement = document.createElement('div');
+        itemElement.classList.add('cart-item');
+
+        itemElement.innerHTML = `
+          <div class="cart-item-details">
+            <h4>${item.name}</h4>
+            <p>Price: $${price.toFixed(2)}</p>
+            <p>Quantity: ${item.quantity}</p>
+            <p>Subtotal: $${(price * item.quantity).toFixed(2)}</p>
+          </div>
+          <img src="${item.image}" alt="${item.name}">
+        `;
+
+        cartItemsContainer.appendChild(itemElement);
+        totalPrice += price * item.quantity; // Accumulate the total price
+      });
+
+      totalPriceElement.textContent = totalPrice.toFixed(2); // Update the total price
+
+      if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<p>Your cart is empty!</p>';
+      }
+    }
+
+    // Handle form submission
+    document.getElementById('checkout-form').addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const address = document.getElementById('address').value;
+
+      if (!name || !email || !phone || !address) {
+        alert('Please fill in all the details.');
+        return;
+      }
+
+      // Save order details (You can replace this with server-side logic if needed)
+      const orderDetails = {
+        name,
+        email,
+        phone,
+        address,
+        cart,
+        total: totalPriceElement.textContent
+      };
+
+      alert('Order confirmed! Thank you for shopping with us.');
+      console.log('Order Details:', orderDetails);
+
+      // Clear the cart after order confirmation
+      localStorage.removeItem('cart');
+      renderCart();
+    });
+
+    // Initial render
+    renderCart();
+  </script>
+</body>
+</html>
+

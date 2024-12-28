@@ -3,33 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce Website</title>
+    <title>Cara-Shoppy</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="header">
-        <a href="#">
-            <img src="img/logo.png" class="logo" alt="">
-        </a>
+<section id="header">
+    <a href="#">
+        <img src="img/logo.png" class="logo" alt="">
+    </a>
 
-        <div>
-            <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
-                <a href="#" id="close"><i class="far fa-times"></i></a>
-            </ul>
-        </div>
-        <div id="mobile">
-           
-            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
-            <i id="bar" class="fas fa-outdent"></i>
-        </div>
-    </section>
+    <div>
+        <ul id="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li id="lg-bag">
+                <a href="cart.html">
+                    <i class="far fa-shopping-bag"></i>
+                    <span id="cart-count">0</span> <!-- Added cart count badge -->
+                </a>
+            </li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <a href="cart.html">
+            <i class="far fa-shopping-bag"></i>
+            <span id="mobile-cart-count">0</span> <!-- Cart count for mobile -->
+        </a>
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+</section>
+
 
     <section id="hero">
         <h4>Trade-in-offer</h4>
@@ -73,8 +81,8 @@
             <div class="pro">
                 <img src="img/products/f1.jpg" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>By GraphicTee Co.</span>
+                    <h5 class="product-name">Cartoon Astronaut T-Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -82,17 +90,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <span class="pp">$<h4 class="product-price">78</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
             <div class="pro">
                 <img src="img/products/f2.jpg" alt="">
                 <div class="des">
-                    <span>Van Heusen</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>By Van Heusen</span>
+                    <h5 class="product-name">Velocity Vibe Men Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -100,17 +108,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$80</h4>
+                    <span class="pp">$<h4 class="product-price">80</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
             <div class="pro">
                 <img src="img/products/f3.jpg" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Performance Men Floral Shirt</h5>
+                    <span>By Adidas</span>
+                    <h5 class="product-name">Performance Men Floral Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -118,17 +126,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$66</h4>
+                    <span class="pp">$<h4 class="product-price">82</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
             <div class="pro">
                 <img src="img/products/f4.jpg" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>By Streetwear Co.</span>
+                    <h5 class="product-name">Urban Breeze</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -136,17 +144,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <span class="pp">$<h4 class="product-price">84</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
             <div class="pro">
                 <img src="img/products/f5.jpg" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>By Timeless Prints</span>
+                    <h5 class="product-name">Retro Radiance T-Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -154,17 +162,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <span class="pp">$<h4 class="product-price">80</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
             <div class="pro">
                 <img src="img/products/f6.jpg" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>By PeakFit Gear</span>
+                    <h5 class="product-name">Trail Blazer - Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -172,17 +180,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <span class="pp">$<h4 class="product-price">78</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
             <div class="pro">
                 <img src="img/products/f7.jpg" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>By LiftLife Apparel</span>
+                    <h5 class="product-name">FloralGo Pro Trouser </h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -190,17 +198,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <span class="pp">$<h4 class="product-price">76</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
             <div class="pro">
                 <img src="img/products/f8.jpg" alt="">
                 <div class="des">
-                    <span>Louis Vuitton</span>
-                    <h5>Suck-my Shirt</h5>
+                    <span>By Louis Vuitton</span>
+                    <h5 class="product-name">Cat Girl Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -208,9 +216,9 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$65</h4>
+                    <span class="pp">$<h4 class="product-price">65</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
@@ -230,8 +238,8 @@
             <div class="pro">
                 <img src="img/products/n1.jpg" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>By Prestige Couture</span>
+                    <h5 class="product-name">Executive Edge Men Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -239,17 +247,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <span class="pp">$<h4 class="product-price">78</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
             <div class="pro">
                 <img src="img/products/n2.jpg" alt="">
                 <div class="des">
-                    <span>Van Heusen</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>By Elite Threads</span>
+                    <h5 class="product-name">Boardroom Bold Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -257,17 +265,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$80</h4>
+                    <span class="pp">$<h4 class="product-price">80</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
             <div class="pro">
                 <img src="img/products/n3.jpg" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Performance Men Floral Shirt</h5>
+                    <span>By Van Heusen</span>
+                    <h5 class="product-name">Performance Men Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -275,17 +283,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$66</h4>
+                    <span class="pp">$<h4 class="product-price">66</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
             <div class="pro">
                 <img src="img/products/n4.jpg" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>By ChillMode Apparel</span>
+                    <h5 class="product-name">Weekend Wanderer T-Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -293,17 +301,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <span class="pp">$<h4 class="product-price">72</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
             <div class="pro">
                 <img src="img/products/n5.jpg" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>By Professional Line</span>
+                    <h5 class="product-name">Sharp Stripes Men Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -311,17 +319,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                   <span class="pp">$<h4 class="product-price">78</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
             <div class="pro">
                 <img src="img/products/n6.jpg" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>By BreezyVibes</span>
+                    <h5 class="product-name">Linen Luxe Breezy</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -329,17 +337,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <span class="pp">$<h4 class="product-price">68</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
             <div class="pro">
                 <img src="img/products/n7.jpg" alt="">
                 <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <span>By MotionWear</span>
+                    <h5 class="product-name">ActiveFlex Men Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -347,17 +355,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$78</h4>
+                    <span class="pp">$<h4 class="product-price">84</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
             <div class="pro">
                 <img src="img/products/n8.jpg" alt="">
                 <div class="des">
-                    <span>Louis Vuitton</span>
-                    <h5>Suck-my Shirt</h5>
+                    <span>By Louis Vuitton</span>
+                    <h5 class="product-name">Bold-Black Half-Shirt</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -365,9 +373,9 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$65</h4>
+                    <span class="pp">$<h4 class="product-price">78</h4></span>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button class="add-to-cart-btn"><i class="fal fa-shopping-cart cart"></i></button>
                 
 
             </div>
@@ -425,7 +433,7 @@
         <div class="col">
           <img class="logo" src="img/logo.png" alt="">
           <h4>Contact</h4>
-          <p><strong>Address: </strong>562 Wellington Road, Street 32, San Francisco</p>
+          <p><strong>Address: </strong>Cara, Popular Corner, Bangalore</p>
           <p><strong>Phone: </strong>+01 2222 365 /(+91) 01 2345 6789</p>
           <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</p>
           <div class="follow">
@@ -477,6 +485,7 @@
 
     
     <script src="script.js"></script>
+    <script src="cart.js"></script>
     
 </body>
 </html>

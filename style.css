@@ -218,12 +218,18 @@ padding: 10px 0;
   }
   
   #product1 .pro .des  h4{
-    padding-top: 7px;
+    /* padding-top: 7px; */
     font-size: 15px;
     font-weight:700 ;
     color: #088178;
   }
-
+  #product1 .pro .des  .pp{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight:700 ;
+    color: #088178;
+    display: flex;
+  }
   
   #product1 .pro .cart {
     width: 40px;
@@ -661,4 +667,23 @@ footer .copyright{
     #newsletter{
         padding: 40px 20px;
     }
+}
+
+#cart-count,
+#mobile-cart-count {
+  background-color: red; /* Adjust color */
+  color: white; /* Text color */
+  border-radius: 50%; /* Circular badge */
+  padding: 2px 6px; /* Adjust size */
+  font-size: 12px; /* Adjust font size */
+  position: relative;
+  top: -10px; /* Adjust position */
+  left: -10px;
+  display: none; /* Initially hidden */
+}
+
+#navbar a span,
+#mobile a span {
+  text-decoration: none;
+  color: white; /* Ensure the text remains white */
 }
